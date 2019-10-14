@@ -1,24 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+import Carousel from './carousel'
 import './App.css';
-
+import img0 from './imgs/01.png';
+import img1 from './imgs/02.png';
+import img2 from './imgs/03.png';
+import img3 from './imgs/04.png';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Carousel imgList={[img0,img1,img2,img3]} bgW={600} bgH={400} intervalTime = {5000}/>
     </div>
   );
 }
